@@ -1,1 +1,14 @@
-<p>header works!</p>
+
+<nav class="navbar">
+      <ul>
+        <li class="title-section"><a routerLink="home" routerLinkActive [routerLinkActive]="'is-active'" class="logo">MY Application</a></li>
+        <li class="title-section"><a>Film</a>
+            <ul><li *ngFor="let item of genresFilm"><a>{{item.name}}</a></li></ul>
+        </li>
+
+        <li class="title-section"><a>SerieTv</a>
+            <ul><li *ngFor="let item of genresSeries"><a>{{item.name}}</a></li></ul>
+        </li>
+      </ul>
+</nav>
+
